@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # variables
 wdir=$PWD
 arch=$(uname -m)

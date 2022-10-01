@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -n "$(command -v pacman)" ]; then
 	echo "Pacman found"
 elif [ -n "$(command -v apt-get)" ]; then

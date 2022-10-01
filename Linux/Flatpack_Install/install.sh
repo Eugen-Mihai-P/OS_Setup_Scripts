@@ -1,3 +1,5 @@
+#!/bin/bash
+
 declare -a supported_distros=(
 [0]="DebianGNULinux"
 [1]="Deepin"
@@ -25,17 +27,16 @@ declare -a supported_distros=(
 
 [15]="Pisi"
 
-[16]="Arch"
-[17]="EndeavourOS"
+[16]="EndeavourOS"
 )
 
 wdir=$PWD
 
 
 # read first line in distro name file
-cd ..
+# cd ..
 current_distro=$(head -n 1 distro_name.txt)
-cd $wdir
+# cd $wdir
 found=0
 
 # search array for the detected distro

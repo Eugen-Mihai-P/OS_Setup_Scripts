@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo apt-get -y update && upgrade
 
 sudo apt-get -y install libvirt-daemon
