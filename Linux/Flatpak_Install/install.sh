@@ -35,7 +35,7 @@ wdir=$PWD
 
 # read first line in distro name file
 # cd ..
-current_distro=$(head -n 1 distro_name.txt)
+current_distro=$(head -n 1 $wdir/distro_name.txt)
 # cd $wdir
 found=0
 
@@ -44,7 +44,7 @@ for i in ${!supported_distros[@]}
 do
 	# for supported distros run appropriate script
 	if [ "${supported_distros[$i]}" = "$current_distro" ]; then
-		script="$wdir/setup/${current_distro}.sh"
+		script="$wdir/Flatpak_Install/setup/${current_distro}.sh"
 		bash "$script"
 		found=1
 	fi
@@ -53,7 +53,7 @@ done
 
 # if distro isn't supported notify user
 if [ $found -eq 1 ]; then
-	echo -e "\n\nFlatpack is now installed.\n"
+	echo -e "\n\nFlatpack is now installed, please reboot.\n"
 else
 	echo -e "\n\nFlatpack not supported. Continuing setup.\n"
 fi

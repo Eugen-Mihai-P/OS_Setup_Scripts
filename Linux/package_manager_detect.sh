@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ -n "$(command -v pacman)" ]; then
-	echo "Pacman found"
+	echo "pacman_package_manager" > package_manager.txt
 elif [ -n "$(command -v apt-get)" ]; then
-	echo "Apt found"
+	echo "apt_package_manager" > package_manager.txt
 elif [ -n "$(command -v zypper)" ]; then
-	echo "Zypper found"
+	echo "zypper_package_manager" > package_manager.txt
 elif [ -n "$(command -v dnf)" ]; then
-	echo "Dnf found"
+	echo "dnf_package_manager" > package_manager.txt
 else
 	echo "Package manager not configured. Aborting."
 fi

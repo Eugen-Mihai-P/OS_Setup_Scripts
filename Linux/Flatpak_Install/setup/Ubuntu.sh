@@ -6,8 +6,8 @@ sudo apt install flatpak
 wdir=$PWD
 
 
-current_DE=$(head -n 1 $PWD/../../DE.txt)
-cd $wdir
+current_DE=$(head -n 1 $wdir/DE.txt)
+
 
 if [ $current_DE = "gnome" ]; then
 	sudo apt install -y gnome-software-plugin-flatpak
