@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # qemu-kvm installation
-sudo apt-get -y update && sudo apt-get -y upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 
-sudo apt-get -y install libvirt-daemon
+sudo apt-get install libvirt-daemon -y
 
 sudo systemctl enable libvirtd
 sudo systemctl start libvirtd

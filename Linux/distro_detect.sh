@@ -13,4 +13,4 @@ else
 	distroname="$(uname -s) $(uname -r)"
 fi
 
-echo $distroname | sed 's/ //g' | sed 's/\///g' > distro_name.txt
+echo $distroname | sed 's/ //g' | sed 's/\///g' > aux_files/distro_name.txt
