@@ -27,7 +27,7 @@ else
 
 
 	# run flatpak install script
-	bash Flatpak_Install/install.sh
+	bash Flatpak_Install/Flatpak_Install.sh
 	
 	
 	# build github software

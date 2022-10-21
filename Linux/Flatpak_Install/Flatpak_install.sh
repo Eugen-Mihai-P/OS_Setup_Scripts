@@ -35,7 +35,7 @@ wdir=$PWD
 
 # read first line in distro name file
 # cd ..
-current_distro=$(head -n 1 $wdir/distro_name.txt)
+current_distro=$(head -n 1 $wdir/aux_files/distro_name.txt)
 # cd $wdir
 found=0
 
